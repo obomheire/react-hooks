@@ -1,6 +1,8 @@
-// import { useState, useEffect} from 'react'
+// EXAMPLE ONE
 
-// const UseStateTutor = () => {
+// import { useState} from 'react'
+
+// const UseStateHook = () => {
 
 //     const [ counter, setCounter] = useState(0)
 
@@ -8,9 +10,7 @@
 //         setCounter(counter + 1)
         
 //     }
-//     useEffect(() => {
-//        // setCounter()
-//     }, [])
+
 //   return (
 //       <div>
 //       {counter}
@@ -20,11 +20,11 @@
 //   )
 // }
 
-// export default UseStateTutor
+// export default UseStateHook
 
-import { useState, useEffect} from 'react'
+import { useState} from 'react'
 
-const UseStateTutor = () => {
+const UseStateHook = () => {
 
     const [ inputValue, setInputValue] = useState('Zack')
 
@@ -32,10 +32,7 @@ const UseStateTutor = () => {
         setInputValue(e.target.value)
         
     }
-    useEffect(() => {
-        // handleClick()
-        // setCounter()
-    }, [])
+  
   return (
       <div>
       <input type='text' name='name' placeholder='enter text' onChange={onChange}/>
@@ -45,4 +42,4 @@ const UseStateTutor = () => {
   )
 }
 
-export default UseStateTutor
+export default UseStateHook
